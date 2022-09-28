@@ -4,6 +4,26 @@ class Main extends Component {
     
     constructor(props) {
         super(props);
+
+        this.state = {
+            generalExp: {
+                name: '',
+                email: '',
+                phone: '',
+            },
+            educationExp: {
+                school: '',
+                major: '',
+                gradDate: '',
+            },
+            workExp: {
+                companyName: '',
+                positionTitle: '',
+                tasks: '',
+                dateBegin: '',
+                dateEnd: '',
+            }
+        }
     }
 
     render() {
