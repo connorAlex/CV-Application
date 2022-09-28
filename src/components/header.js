@@ -8,7 +8,9 @@ class Header extends Component {
 
     render() {
         return (
-            <div>This is a header</div>
+            <div>
+                <div>CV Application</div>
+            </div>
         );
     };
 }
