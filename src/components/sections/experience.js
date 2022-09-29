@@ -8,7 +8,33 @@ class Experience extends Component {
 
     render() {
         return (
-            <div></div>
+            <div>
+                <form>
+                    <input
+                        type="text"
+                        id="companyName"
+                        placeholder='Company Name'
+                    />
+                    <input
+                        type="text"
+                        id="jobTitle"
+                        placeholder='Job Title'
+                    />
+                    <textarea
+                        type="text"
+                        id="tasks"
+                        placeholder='Tasks and Responsibilities'
+                    />
+                    <input 
+                        type="date"
+                        id="jobStart"
+                    />
+                    <input 
+                        type="date"
+                        id="jobEnd"
+                    />
+                </form>
+            </div>
         );
     };
 }

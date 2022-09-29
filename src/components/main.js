@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import Education from './sections/education';
+import Experience from './sections/experience';
+import General from './sections/general';
 
 class Main extends Component {
     
@@ -22,7 +24,7 @@ class Main extends Component {
             },
             workExp: {
                 companyName: '',
-                positionTitle: '',
+                jobTitle: '',
                 tasks: '',
                 dateBegin: '',
                 dateEnd: '',
@@ -32,7 +34,11 @@ class Main extends Component {
 
     render() {
         return (
-            <Education />
+            <div>
+                <General />
+                <Experience />
+                <Education />
+            </div>
         );
     };
 }
