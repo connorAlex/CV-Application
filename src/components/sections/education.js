@@ -9,29 +9,40 @@ class Education extends Component {
     render() {
         return (
             <div>
-                <input 
-                    type="text"
-                    id="school"
-                    placeholder="School"
-                />
-                <input 
-                    type="text"
-                    id="degree"
-                    placeholder='Bachelor'
-                />
-                <input
-                    type="text"
-                    id="major"
-                    placeholder='Science'
-                />
-                <input 
-                    type="date"
-                    id="gradStart"
-                />
-                <input
-                    type="date"
-                    id="gradEnd"
-                />
+                <form>
+                    <label for='school'>School</label>
+                    <input
+                        type="text"
+                        id="school"
+                        name='school'
+                    />
+                    <label for="degree">Degree</label>
+                    <input
+                        type="text"
+                        id="degree"
+                        name="degree"
+                        placeholder='Bachelor'
+                    />
+                    <label for="major">Major</label>
+                    <input
+                        type="text"
+                        id="major"
+                        name='major'
+                        placeholder='Science'
+                    />
+                    <label for='gradStart'>Start Date</label>
+                    <input
+                        type="date"
+                        name='gradStart'
+                        id="gradStart"
+                    />
+                    <label for='gradEnd'>Graduation Date</label>
+                    <input
+                        type="date"
+                        id="gradEnd"
+                        name='gradEnd'
+                    />
+                </form>
             </div>
         );
     };
