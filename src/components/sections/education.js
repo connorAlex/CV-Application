@@ -9,7 +9,7 @@ class Education extends Component {
     render() {
         return (
             <div>
-                <form>
+                <form id="educationExp">
                     <label for='school'>School</label>
                     <input
                         type="text"

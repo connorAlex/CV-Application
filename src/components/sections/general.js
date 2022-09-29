@@ -9,7 +9,7 @@ class General extends Component {
     render() {
         return (
             <div>
-                <form>
+                <form id="generalExp">
                     <label for="name">Name</label>
                     <input 
                         type="text"
