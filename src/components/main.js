@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Education from './sections/education';
 
 class Main extends Component {
     
@@ -6,6 +7,8 @@ class Main extends Component {
         super(props);
 
         this.state = {
+            jobs:[],
+            schools:[],
             generalExp: {
                 name: '',
                 email: '',
@@ -13,6 +16,7 @@ class Main extends Component {
             },
             educationExp: {
                 school: '',
+                degree: '',
                 major: '',
                 gradDate: '',
             },
@@ -28,7 +32,7 @@ class Main extends Component {
 
     render() {
         return (
-            <div>This is main</div>
+            <Education />
         );
     };
 }
