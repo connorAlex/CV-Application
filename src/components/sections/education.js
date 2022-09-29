@@ -10,33 +10,33 @@ class Education extends Component {
         return (
             <div>
                 <form id="educationExp">
-                    <label for='school'>School</label>
+                    <label htmlFor='school'>School</label>
                     <input
                         type="text"
                         id="school"
                         name='school'
                     />
-                    <label for="degree">Degree</label>
+                    <label htmlFor="degree">Degree</label>
                     <input
                         type="text"
                         id="degree"
                         name="degree"
                         placeholder='Bachelor'
                     />
-                    <label for="major">Major</label>
+                    <label htmlFor="major">Major</label>
                     <input
                         type="text"
                         id="major"
                         name='major'
                         placeholder='Science'
                     />
-                    <label for='gradStart'>Start Date</label>
+                    <label htmlFor='gradStart'>Start Date</label>
                     <input
                         type="date"
                         name='gradStart'
                         id="gradStart"
                     />
-                    <label for='gradEnd'>Graduation Date</label>
+                    <label htmlFor='gradEnd'>Graduation Date</label>
                     <input
                         type="date"
                         id="gradEnd"

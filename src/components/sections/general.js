@@ -5,25 +5,25 @@ class General extends Component {
     constructor(props) {
         super(props);
     }
-
+    
     render() {
         return (
             <div>
                 <form id="generalExp">
-                    <label for="name">Name</label>
+                    <label htmlFor="name">Name</label>
                     <input 
                         type="text"
                         id="name"
                         name="name"
                         placeholder='Name'
                     />
-                    <label for="email">Email</label>
+                    <label htmlFor="email">Email</label>
                     <input 
                         type="email"
                         id="email"
                         name="email"
                     />
-                    <label for="phoneNum">Phone Number</label>
+                    <label htmlFor="phoneNum">Phone Number</label>
                     <input 
                         type="tel"
                         id="phoneNum"

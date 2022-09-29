@@ -31,13 +31,42 @@ class Main extends Component {
             }
         }
     }
+    handleChangeGeneral = (e) => {
+        this.setState({
+            generalExp: {
+                name: '',
+                email: '',
+                phone: '',
+            }
+        });
+    };
+    
+    handleChangeExperience = (e) => {
+        this.setState({
+            generalExp: {
+                name: '',
+                email: '',
+                phone: '',
+            }
+        });
+    };
+
+    handleChangeEducation = (e) => {
+        this.setState({
+            generalExp: {
+                name: '',
+                email: '',
+                phone: '',
+            }
+        });
+    };
 
     render() {
         return (
             <div>
-                <General />
-                <Experience />
-                <Education />
+                <General handleChange={this.handleChangeGeneral}/>
+                <Experience handleChange={this.handleChangeExperience}/>
+                <Education handleChange={this.handleChangeEducation}/>
             </div>
         );
     };
