@@ -11,7 +11,7 @@ class General extends Component {
         const { onChange } = this.props;
 
         return (
-            <div className = "general">
+            <div class = "general">
                 <form id="generalExp">
                     <div>
                         <label htmlFor="name">Name</label>
@@ -19,7 +19,6 @@ class General extends Component {
                             type="text"
                             id="name"
                             name="name"
-                            placeholder='Name'
                             onChange={onChange}
                         />
                     </div>
