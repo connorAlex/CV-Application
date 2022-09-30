@@ -10,7 +10,7 @@ class Education extends Component {
         const {onChange} = this.props;
         return (
             
-            <div>
+            <div className = "education">
                 <form id="educationExp">
                     <label htmlFor='school'>School</label>
                     <input

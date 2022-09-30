@@ -10,7 +10,7 @@ class Experience extends Component {
         const { onChange } = this.props;
 
         return (
-            <div>
+            <div className = "experience">
                 <form id="workExp">
                     <label htmlFor='companyName'>Company Name</label>
                     <input

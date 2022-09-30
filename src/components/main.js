@@ -32,22 +32,22 @@ class Main extends Component {
         }
     }
     handleChange = (e) => {
-        const category = {...this.state[e.target.parentNode.getAttribute('id')]};
+        const category = {...this.state[e.target.parentNode.parentNode.getAttribute('id')]};
         const key = e.target.getAttribute('name');
         const value = e.target.value;
 
         category[key] = value;
-        this.setState({ [e.target.parentNode.getAttribute('id')]: category})
+        this.setState({ [e.target.parentNode.parentNode.getAttribute('id')]: category})
     }
 
     render() {
         const { generalExp, educationExp, workExp } = this.state;
         return (
 
-            <div>
+            <div className = "main">
                 <General info={generalExp} onChange={this.handleChange}/>
-                <div>{generalExp.name}</div>
-                <div>{generalExp.email}</div>
+                {/* <div>{generalExp.name}</div>
+                <div>{generalExp.email}</div> */}
                 <Experience onChange={this.handleChange}/>
                 <Education onChange={this.handleChange}/>
             </div>
