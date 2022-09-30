@@ -12,9 +12,9 @@ class Main extends Component {
             jobs:[],
             schools:[],
             generalExp: {
-                name: '',
-                email: '',
-                phone: '',
+                name: 'test',
+                email: 'fffff',
+                phone: 'asdf',
             },
             educationExp: {
                 school: '',
@@ -31,42 +31,25 @@ class Main extends Component {
             }
         }
     }
-    handleChangeGeneral = (e) => {
-        this.setState({
-            generalExp: {
-                name: '',
-                email: '',
-                phone: '',
-            }
-        });
-    };
-    
-    handleChangeExperience = (e) => {
-        this.setState({
-            generalExp: {
-                name: '',
-                email: '',
-                phone: '',
-            }
-        });
-    };
+    handleChange = (e) => {
+        const category = {...this.state[e.target.parentNode.getAttribute('id')]};
+        const key = e.target.getAttribute('name');
+        const value = e.target.value;
 
-    handleChangeEducation = (e) => {
-        this.setState({
-            generalExp: {
-                name: '',
-                email: '',
-                phone: '',
-            }
-        });
-    };
+        category[key] = value;
+        this.setState({ [e.target.parentNode.getAttribute('id')]: category})
+    }
 
     render() {
+        const { generalExp, educationExp, workExp } = this.state;
         return (
+
             <div>
-                <General handleChange={this.handleChangeGeneral}/>
-                <Experience handleChange={this.handleChangeExperience}/>
-                <Education handleChange={this.handleChangeEducation}/>
+                <General info={generalExp} onChange={this.handleChange}/>
+                <div>{generalExp.name}</div>
+                <div>{generalExp.email}</div>
+                <Experience onChange={this.handleChange}/>
+                <Education onChange={this.handleChange}/>
             </div>
         );
     };
