@@ -5,8 +5,11 @@ class General extends Component {
     constructor(props) {
         super(props);
     }
-    
+
     render() {
+
+        const { onChange } = this.props;
+
         return (
             <div>
                 <form id="generalExp">
@@ -16,12 +19,14 @@ class General extends Component {
                         id="name"
                         name="name"
                         placeholder='Name'
+                        onChange={onChange}
                     />
                     <label htmlFor="email">Email</label>
                     <input 
                         type="email"
                         id="email"
                         name="email"
+                        onChange={onChange}
                     />
                     <label htmlFor="phoneNum">Phone Number</label>
                     <input 
@@ -29,7 +34,9 @@ class General extends Component {
                         id="phoneNum"
                         name="phoneNum"
                         pattern='[0-9]{3}-[0-9]{2}-[0-9]{3}'
+                        onChange={onChange}
                     />
+                    <button type="submit">Submit</button>
                 </form>
 
             </div>
