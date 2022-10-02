@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Education from './sections/education';
 import Experience from './sections/experience';
 import General from './sections/general';
+import CV from './sections/cv.js';
 
 class Main extends Component {
     
@@ -9,8 +10,17 @@ class Main extends Component {
         super(props);
 
         this.state = {
-            jobs:[],
-            schools:[],
+            jobs:[
+                
+            ],
+            schools:[
+                {
+                    school: 'Fake School',
+                    degree: 'STEM',
+                    major: 'Fake Major',
+                    gradDate: '2016',
+                }
+            ],
             generalExp: {
                 name: 'test',
                 email: 'fffff',
@@ -41,15 +51,16 @@ class Main extends Component {
     }
 
     render() {
-        const { generalExp, educationExp, workExp } = this.state;
+        const { generalExp, educationExp, workExp, schools } = this.state;
         return (
 
-            <div className = "main">
-                <General info={generalExp} onChange={this.handleChange}/>
-                {/* <div>{generalExp.name}</div>
-                <div>{generalExp.email}</div> */}
-                <Experience onChange={this.handleChange}/>
-                <Education onChange={this.handleChange}/>
+            <div>
+                <div className = "main">
+                    <General info={generalExp} onChange={this.handleChange}/>
+                    <Experience onChange={this.handleChange}/>
+                    <Education onChange={this.handleChange}/>
+                </div>
+                <CV schools={schools}/>
             </div>
         );
     };
