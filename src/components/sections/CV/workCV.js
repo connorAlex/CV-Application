@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class workCV extends Component  {
+class WorkCV extends Component  {
     constructor(props) {
       super(props);
     }
@@ -17,5 +17,5 @@ class workCV extends Component  {
     }
   }
   
-  export default workCV;
+  export default WorkCV;
   

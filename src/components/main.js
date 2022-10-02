@@ -3,6 +3,7 @@ import Education from './sections/form/education';
 import Experience from './sections/form/experience';
 import General from './sections/form/general';
 import CV from './sections/CV/cv.js';
+import uniqid from "uniqid";
 
 class Main extends Component {
     
@@ -19,6 +20,7 @@ class Main extends Component {
                     degree: 'STEM',
                     major: 'Fake Major',
                     gradDate: '2016',
+                    key: uniqid(),
                 }
             ],
             generalExp: {
@@ -31,6 +33,7 @@ class Main extends Component {
                 degree: '',
                 major: '',
                 gradDate: '',
+                key: uniqid(),
             },
             workExp: {
                 companyName: '',
@@ -38,6 +41,7 @@ class Main extends Component {
                 tasks: '',
                 dateBegin: '',
                 dateEnd: '',
+                key: uniqid(),
             }
         }
     }
@@ -51,16 +55,17 @@ class Main extends Component {
     }
 
     render() {
-        const { generalExp, educationExp, workExp, schools } = this.state;
+        const { jobs, schools, generalExp } = this.state;
+        
         return (
-
+            
             <div>
                 <div className = "main">
                     <General info={generalExp} onChange={this.handleChange}/>
                     <Experience onChange={this.handleChange}/>
                     <Education onChange={this.handleChange}/>
                 </div>
-                <CV schools={schools}/>
+                <CV jobs={jobs} schools={schools} general={generalExp}/>
             </div>
         );
     };

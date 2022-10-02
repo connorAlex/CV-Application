@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class edCV extends Component  {
+class EdCV extends Component  {
     constructor(props) {
       super(props);
     }
@@ -8,15 +8,15 @@ class edCV extends Component  {
     
 
     render() {
-        const { schools } = this.props;
+        const { school } = this.props;
         return (
             
             <div className='edCV'>
-                
+                {school.school}
             </div>
         )          
     }
   }
   
-  export default edCV;
+  export default EdCV;
   

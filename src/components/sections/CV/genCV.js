@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class genCV extends Component  {
+class GenCV extends Component  {
     constructor(props) {
       super(props);
     }
@@ -18,5 +18,5 @@ class genCV extends Component  {
     }
   }
   
-  export default genCV;
+  export default GenCV;
   

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import edCV from './edCV.js';
-import genCV from './genCV.js';
-import workCV from './workCV.js';
+import EdCV from './EdCV.js';
+import GenCV from './GenCV.js';
+import WorkCV from './WorkCV.js';
+import uniqid from "uniqid";
 
 class CV extends Component  {
     constructor(props) {
@@ -11,14 +12,16 @@ class CV extends Component  {
     
 
     render() {
-        const { schools } = this.props;
+        const {schools, general, jobs } = this.props;
+        
+
         return (
             
             <div className='cv'>
-                <div> this is the cv</div>
-                {schools.map((school) => {
-                    return <div>{school.school}</div>
-                })}
+                <GenCV />
+                {console.log(schools)}
+                {schools.map((item) => <EdCV school={item} key={item.key} />)}
+                <WorkCV />
             </div>
         )          
     }
