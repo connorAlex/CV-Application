@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Education from './sections/form/education';
-import Experience from './sections/experience';
-import General from './sections/general';
+import Experience from './sections/form/experience';
+import General from './sections/form/general';
 import CV from './sections/CV/cv.js';
 
 class Main extends Component {

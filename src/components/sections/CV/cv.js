@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import edCV from './edCV.js';
+import genCV from './genCV.js';
+import workCV from './workCV.js';
 
 class CV extends Component  {
     constructor(props) {
