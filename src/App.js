@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from './components/header.js';
 import Main from './components/main.js';
 import Footer from './components/footer.js';
-import CV from './components/sections/cv.js'
+import CV from './components/sections/CV/cv.js'
 
 class App extends Component  {
   constructor(props) {
