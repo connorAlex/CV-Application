@@ -11,7 +11,7 @@ class General extends Component {
         const { onChange } = this.props;
 
         return (
-            <div class = "general">
+            <div className = "general">
                 <form id="generalExp">
                     <div>
                         <label htmlFor="name">Name</label>
