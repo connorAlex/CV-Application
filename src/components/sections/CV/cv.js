@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import EdCV from './EdCV.js';
-import GenCV from './GenCV.js';
-import WorkCV from './WorkCV.js';
+import EdCV from './edCV.js';
+import GenCV from './genCV.js';
+import WorkCV from './workCV.js';
 import uniqid from "uniqid";
 
 class CV extends Component  {
