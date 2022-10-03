@@ -18,10 +18,9 @@ class CV extends Component  {
         return (
             
             <div className='cv'>
-                <GenCV />
-                {console.log(schools)}
+                <GenCV general={general}/>
                 {schools.map((item) => <EdCV school={item} key={item.key} />)}
-                <WorkCV />
+                {jobs.map((item) => <WorkCV job={item} key={item.key} />)}
             </div>
         )          
     }

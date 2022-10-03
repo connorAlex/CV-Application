@@ -12,7 +12,14 @@ class Main extends Component {
 
         this.state = {
             jobs:[
-                
+                {
+                    companyName: 'Fake Job',
+                    jobTitle: 'Fake Position',
+                    tasks: 'Fask Tasks',
+                    dateBegin: '10-08-2020',
+                    dateEnd: '11-45-2021',
+                    key: uniqid(),
+                }
             ],
             schools:[
                 {
@@ -24,7 +31,7 @@ class Main extends Component {
                 }
             ],
             generalExp: {
-                name: 'test',
+                name: 'Connor',
                 email: 'fffff',
                 phone: 'asdf',
             },

@@ -8,10 +8,11 @@ class WorkCV extends Component  {
     
 
     render() {
-        const { schools } = this.props;
+        const { job } = this.props;
         return (
             
             <div className='workCV'>
+                {job.jobTitle}
             </div>
         )          
     }

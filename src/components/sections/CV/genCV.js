@@ -8,11 +8,11 @@ class GenCV extends Component  {
     
 
     render() {
-        const { schools } = this.props;
+        const { general } = this.props;
         return (
             
             <div className='genCV'>
-               
+               {general.name}
             </div>
         )          
     }
