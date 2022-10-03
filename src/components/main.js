@@ -19,7 +19,7 @@ class Main extends Component {
                     dateBegin: '10-08-2020',
                     dateEnd: '11-45-2021',
                     key: uniqid(),
-                }
+                },
             ],
             schools:[
                 {
@@ -28,12 +28,12 @@ class Main extends Component {
                     major: 'Fake Major',
                     gradDate: '2016',
                     key: uniqid(),
-                }
+                },
             ],
             generalExp: {
                 name: 'Connor',
-                email: 'fffff',
-                phone: 'asdf',
+                email: 'connor.alex.cochrane@gmail.com',
+                phone: '555-555-5555',
             },
             educationExp: {
                 school: '',
@@ -66,7 +66,7 @@ class Main extends Component {
         
         return (
             
-            <div>
+            <div className='content'>
                 <div className = "main">
                     <General info={generalExp} onChange={this.handleChange}/>
                     <Experience onChange={this.handleChange}/>

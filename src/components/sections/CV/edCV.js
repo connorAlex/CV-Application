@@ -12,7 +12,9 @@ class EdCV extends Component  {
         return (
             
             <div className='edCV'>
-                {school.school}
+                <div>{school.school}</div>
+                <div>{school.degree}</div>
+                <div>{school.major}</div>
             </div>
         )          
     }
