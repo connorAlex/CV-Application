@@ -22,7 +22,7 @@ body {
 }
 .app {
   display: grid;
-  grid-template-rows: .5fr 10fr .5fr;
+  grid-template-rows: .5fr 10fr 1fr;
   height: 100%
 }
 .content {
@@ -58,27 +58,6 @@ body {
   justify-content: space-between;
   gap: 25px;
 }
-
-.cv {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  border: 1px solid black;
-  height: 100%;
-  padding: 15px;
-  gap:15px;
-}
-
-.genCV {
-  display: flex;
-  align-items: flex-end;
-  gap: 10px;
-  border-bottom: 1px solid black;
-  font-size: 10px;
-}
-.genCV :nth-child(2) {
-  font-size: 25px;
-}
 input {
   width: 60px;
 }
@@ -86,3 +65,50 @@ textarea {
   width: 100%;
   max-height: 180px;
 }
+.cv {
+  display: flex;
+  font-size: 14px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  background-color: whitesmoke;
+  height: 80%;
+  padding: 5px;
+  width: 60vw;
+  gap:15px;
+}
+.workTitle, .edTitle {
+  border-bottom: 1px solid black;
+  font-size: 18px;
+}
+.genCV {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 10px;
+  border-bottom: 1px solid black;
+  font-size: 10px;
+  padding-bottom: 2px;
+}
+.genCV :nth-child(2) {
+  font-size: 25px;
+}
+
+.edCV {
+
+}
+.workGroup, .edGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.edCV > div:first-child, .workCV > div:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+.edCV > div > div:first-child,.workCV >div>div:first-child  {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+

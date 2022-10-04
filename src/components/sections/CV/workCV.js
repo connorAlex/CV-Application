@@ -12,12 +12,12 @@ class WorkCV extends Component  {
         return (
             
             <div className='workCV'>
-                <div>{job.companyName}</div>
+                <div>
+                    <div>{job.companyName}</div>
+                    <div>{job.dateBegin}-{job.dateEnd}</div>
+                </div>
                 <div>{job.jobTitle}</div>
                 <div>{job.tasks}</div>
-                <div>{job.dateBegin}</div>
-                <div>{job.dateEnd}</div>
-
             </div>
         )          
     }
