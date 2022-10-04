@@ -32,6 +32,15 @@ class Education extends Component {
                         />
                     </div>
                     <div>
+                        <label htmlFor="degreeType">Degree Type</label>
+                        <input
+                            type="text"
+                            id="degreeType"
+                            name="degreeType"
+                            onChange={onChange}
+                        />
+                    </div>
+                    <div>
                         <label htmlFor="major">Major</label>
                         <input
                             type="text"

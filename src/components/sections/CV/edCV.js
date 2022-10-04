@@ -12,11 +12,13 @@ class EdCV extends Component  {
         return (
             
             <div className='edCV'>
-                <div>{school.school}</div>
-                <div>{school.degree}</div>
+                <div>
+                    <div>{school.school}</div>
+                    <div>{school.startDate} - {school.gradDate}</div>
+                </div>
+                <div>{school.degree} of {school.degreeType}</div>
                 <div>{school.major}</div>
-                <div>{school.startDate}</div>
-                <div>{school.gradDate}</div>
+                
             </div>
         )          
     }

@@ -24,7 +24,8 @@ class Main extends Component {
             schools:[
                 {
                     school: 'Fake School',
-                    degree: 'STEM',
+                    degree: 'Bachelor',
+                    degreeType: 'Science',
                     major: 'Fake Major',
                     startDate: '2012',
                     gradDate: '2016',
@@ -39,6 +40,7 @@ class Main extends Component {
             educationExp: {
                 school: '',
                 degree: '',
+                degreeType: '',
                 major: '',
                 startDate: '',
                 gradDate: '',

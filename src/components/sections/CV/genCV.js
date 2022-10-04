@@ -12,8 +12,8 @@ class GenCV extends Component  {
         return (
             
             <div className='genCV'>
-               <div>{general.name}</div>
                <div>{general.email}</div>
+               <div>{general.name}</div>
                <div>{general.phone}</div>
             </div>
         )          
