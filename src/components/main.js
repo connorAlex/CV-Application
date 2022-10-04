@@ -26,6 +26,7 @@ class Main extends Component {
                     school: 'Fake School',
                     degree: 'STEM',
                     major: 'Fake Major',
+                    startDate: '2012',
                     gradDate: '2016',
                     key: uniqid(),
                 },
@@ -52,6 +53,7 @@ class Main extends Component {
             }
         }
     }
+
     handleChange = (e) => {
         const category = {...this.state[e.target.parentNode.parentNode.getAttribute('id')]};
         const key = e.target.getAttribute('name');
@@ -59,6 +61,35 @@ class Main extends Component {
 
         category[key] = value;
         this.setState({ [e.target.parentNode.parentNode.getAttribute('id')]: category})
+    }
+
+    submitJob = (e) => {
+        e.preventDefault();
+        this.setState({
+            jobs: this.state.jobs.concat(this.state.workExp),
+            workExp: {
+                companyName: '',
+                jobTitle: '',
+                tasks: '',
+                dateBegin: '',
+                dateEnd: '',
+                key: uniqid(),
+            }
+        });
+    };
+
+    submitEducation = (e) => {
+        e.preventDefault();
+        this.setState({
+            schools: this.state.schools.concat(this.state.educationExp),
+            educationExp: {
+                school: '',
+                degree: '',
+                major: '',
+                gradDate: '',
+                key: uniqid(),
+            },
+        });
     }
 
     render() {
@@ -69,8 +100,8 @@ class Main extends Component {
             <div className='content'>
                 <div className = "main">
                     <General info={generalExp} onChange={this.handleChange}/>
-                    <Experience onChange={this.handleChange}/>
-                    <Education onChange={this.handleChange}/>
+                    <Experience onChange={this.handleChange} onSubmit={this.submitJob}/>
+                    <Education onChange={this.handleChange} onSubmit={this.submitEducation}/>
                 </div>
                 <CV jobs={jobs} schools={schools} general={generalExp}/>
             </div>

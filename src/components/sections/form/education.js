@@ -2,16 +2,17 @@ import React, {Component} from 'react';
 
 class Education extends Component {
     
+    // eslint-disable-next-line no-useless-constructor
     constructor(props) {
         super(props);
     }
 
     render() {
-        const {onChange} = this.props;
+        const { onChange, onSubmit } = this.props;
         return (
             
             <div className = "education">
-                <form id="educationExp">
+                <form id="educationExp" onSubmit={onSubmit}>
                     <div>
                         <label htmlFor='school'>School</label>
                         <input
@@ -57,6 +58,7 @@ class Education extends Component {
                             onChange={onChange}
                         />
                     </div>
+                    <button type="submit">Add</button>
                 </form>
             </div>
         );

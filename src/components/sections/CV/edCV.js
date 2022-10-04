@@ -15,6 +15,8 @@ class EdCV extends Component  {
                 <div>{school.school}</div>
                 <div>{school.degree}</div>
                 <div>{school.major}</div>
+                <div>{school.startDate}</div>
+                <div>{school.gradDate}</div>
             </div>
         )          
     }

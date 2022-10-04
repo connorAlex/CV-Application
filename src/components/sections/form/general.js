@@ -41,7 +41,6 @@ class General extends Component {
                             onChange={onChange}
                         />
                     </div>
-                    <button type="submit">Submit</button>
                 </form>
 
             </div>

@@ -7,10 +7,10 @@ class Experience extends Component {
     }
 
     render() {
-        const { onChange } = this.props;
+        const { onChange, onSubmit} = this.props;
 
         return (
-            <div className = "experience">
+            <div className = "experience" onSubmit={onSubmit}>
                 <form id="workExp">
                     <div>
                         <label htmlFor='companyName'>Company Name</label>
@@ -58,6 +58,7 @@ class Experience extends Component {
                             onChange={onChange}
                         />
                     </div>
+                    <button type='submit'>Add</button>
                 </form>
             </div>
         );
