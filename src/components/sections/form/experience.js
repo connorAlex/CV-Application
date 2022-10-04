@@ -17,7 +17,7 @@ class Experience extends Component {
                         <input
                             type="text"
                             id="companyName"
-                            
+                            name="companyName"
                             onChange={onChange}
                         />
                     </div>
@@ -36,7 +36,7 @@ class Experience extends Component {
                         
                         <textarea
                             type="text"
-                            id="tasks"
+                            id='tasks'
                             name='tasks'
                             onChange={onChange}
                         />
@@ -45,7 +45,8 @@ class Experience extends Component {
                         <label htmlFor='jobStart'>Start Date</label>
                         <input
                             type="date"
-                            id="jobStart"
+                            id="dateBegin"
+                            name='dateBegin'
                             onChange={onChange}
                         />
                     </div>
@@ -53,8 +54,8 @@ class Experience extends Component {
                         <label htmlFor='jobEnd'>End Date</label>
                         <input
                             type="date"
-                            id="jobEnd"
-                            name='jobEnd'
+                            id="dateEnd"
+                            name='dateEnd'
                             onChange={onChange}
                         />
                     </div>

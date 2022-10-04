@@ -15,7 +15,7 @@ class Main extends Component {
                 {
                     companyName: 'Fake Job',
                     jobTitle: 'Fake Position',
-                    tasks: 'Fask Tasks',
+                    tasks: 'Fake Tasks',
                     dateBegin: '10-08-2020',
                     dateEnd: '11-45-2021',
                     key: uniqid(),
@@ -40,6 +40,7 @@ class Main extends Component {
                 school: '',
                 degree: '',
                 major: '',
+                startDate: '',
                 gradDate: '',
                 key: uniqid(),
             },
@@ -58,6 +59,7 @@ class Main extends Component {
         const category = {...this.state[e.target.parentNode.parentNode.getAttribute('id')]};
         const key = e.target.getAttribute('name');
         const value = e.target.value;
+        
 
         category[key] = value;
         this.setState({ [e.target.parentNode.parentNode.getAttribute('id')]: category})

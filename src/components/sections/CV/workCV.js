@@ -12,8 +12,8 @@ class WorkCV extends Component  {
         return (
             
             <div className='workCV'>
-                <div>{job.jobTitle}</div>
                 <div>{job.companyName}</div>
+                <div>{job.jobTitle}</div>
                 <div>{job.tasks}</div>
                 <div>{job.dateBegin}</div>
                 <div>{job.dateEnd}</div>
