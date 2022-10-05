@@ -8,7 +8,7 @@ class Education extends Component {
     }
 
     render() {
-        const { onChange, onSubmit } = this.props;
+        const { info, onChange, onSubmit } = this.props;
         return (
             
             <div className = "education">
@@ -20,6 +20,7 @@ class Education extends Component {
                             type="text"
                             id="school"
                             name='school'
+                            value={info.school}
                             onChange={onChange}
                         />
                     </div>
@@ -29,6 +30,7 @@ class Education extends Component {
                             type="text"
                             id="degree"
                             name="degree"
+                            value={info.degree}
                             onChange={onChange}
                         />
                     </div>
@@ -38,6 +40,7 @@ class Education extends Component {
                             type="text"
                             id="degreeType"
                             name="degreeType"
+                            value={info.degreeType}
                             onChange={onChange}
                         />
                     </div>
@@ -47,6 +50,7 @@ class Education extends Component {
                             type="text"
                             id="major"
                             name='major'
+                            value={info.major}
                             onChange={onChange}
                         />
                     </div>
@@ -56,6 +60,7 @@ class Education extends Component {
                             type="date"
                             name='gradStart'
                             id="gradStart"
+                            value={info.gradStart}
                             onChange={onChange}
                         />
                     </div>
@@ -65,6 +70,7 @@ class Education extends Component {
                             type="date"
                             id="gradEnd"
                             name='gradEnd'
+                            value={info.gradEnd}
                             onChange={onChange}
                         />
                     </div>

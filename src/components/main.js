@@ -90,7 +90,9 @@ class Main extends Component {
             educationExp: {
                 school: '',
                 degree: '',
+                degreeType: '',
                 major: '',
+                startDate: '',
                 gradDate: '',
                 key: uniqid(),
             },
@@ -98,15 +100,15 @@ class Main extends Component {
     }
 
     render() {
-        const { jobs, schools, generalExp } = this.state;
+        const { jobs, schools, generalExp, educationExp, workExp } = this.state;
         
         return (
             
             <div className='content'>
                 <div className = "main">
                     <General info={generalExp} onChange={this.handleChange}/>
-                    <Experience onChange={this.handleChange} onSubmit={this.submitJob}/>
-                    <Education onChange={this.handleChange} onSubmit={this.submitEducation}/>
+                    <Experience info={workExp}onChange={this.handleChange} onSubmit={this.submitJob}/>
+                    <Education info={educationExp}onChange={this.handleChange} onSubmit={this.submitEducation}/>
                 </div>
                 <CV jobs={jobs} schools={schools} general={generalExp}/>
             </div>
