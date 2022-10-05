@@ -55,22 +55,22 @@ class Education extends Component {
                         />
                     </div>
                     <div>
-                        <label htmlFor='gradStart'>Start Date</label>
+                        <label htmlFor='startDate'>Start Date</label>
                         <input
                             type="date"
-                            name='gradStart'
-                            id="gradStart"
-                            value={info.gradStart}
+                            name='startDate'
+                            id="startDate"
+                            value={info.startDate}
                             onChange={onChange}
                         />
                     </div>
                     <div>
-                        <label htmlFor='gradEnd'>Graduation Date</label>
+                        <label htmlFor='gradDate'>Graduation Date</label>
                         <input
                             type="date"
-                            id="gradEnd"
-                            name='gradEnd'
-                            value={info.gradEnd}
+                            id="gradDate"
+                            name='gradDate'
+                            value={info.gradDate}
                             onChange={onChange}
                         />
                     </div>
