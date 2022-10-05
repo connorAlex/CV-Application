@@ -33,9 +33,10 @@ class Main extends Component {
                 },
             ],
             generalExp: {
-                name: 'Connor',
+                name: 'Connor Cochrane',
                 email: 'connor.alex.cochrane@gmail.com',
                 phone: '555-555-5555',
+                location: 'Chicago, IL 60640'
             },
             educationExp: {
                 school: '',
