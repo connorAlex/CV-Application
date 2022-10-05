@@ -7,7 +7,7 @@ class Experience extends Component {
     }
 
     render() {
-        const { onChange, onSubmit} = this.props;
+        const { info, onChange, onSubmit} = this.props;
 
         return (
             <div className = "experience" onSubmit={onSubmit}>
@@ -19,6 +19,7 @@ class Experience extends Component {
                             type="text"
                             id="companyName"
                             name="companyName"
+                            value={info.companyName}
                             onChange={onChange}
                         />
                     </div>
@@ -28,7 +29,7 @@ class Experience extends Component {
                             type="text"
                             id="jobTitle"
                             name='jobTitle'
-                            
+                            value={info.jobTitle}
                             onChange={onChange}
                         />
                     </div>
@@ -39,6 +40,7 @@ class Experience extends Component {
                             type="text"
                             id='tasks'
                             name='tasks'
+                            value={info.tasks}
                             onChange={onChange}
                         />
                     </div>
@@ -48,6 +50,7 @@ class Experience extends Component {
                             type="date"
                             id="dateBegin"
                             name='dateBegin'
+                            value={info.dateBegin}
                             onChange={onChange}
                         />
                     </div>
@@ -57,6 +60,7 @@ class Experience extends Component {
                             type="date"
                             id="dateEnd"
                             name='dateEnd'
+                            value={info.dateEnd}
                             onChange={onChange}
                         />
                     </div>
