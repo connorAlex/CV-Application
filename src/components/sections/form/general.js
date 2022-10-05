@@ -13,6 +13,7 @@ class General extends Component {
         return (
             <div className = "general">
                 <form id="generalExp">
+                    <div>Personal</div>
                     <div>
                         <label htmlFor="name">Name</label>
                         <input

@@ -13,6 +13,7 @@ class Education extends Component {
             
             <div className = "education">
                 <form id="educationExp" onSubmit={onSubmit}>
+                    <div>Education</div>
                     <div>
                         <label htmlFor='school'>School</label>
                         <input

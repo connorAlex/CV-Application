@@ -12,6 +12,7 @@ class Experience extends Component {
         return (
             <div className = "experience" onSubmit={onSubmit}>
                 <form id="workExp">
+                    <div>Work</div>
                     <div>
                         <label htmlFor='companyName'>Company Name</label>
                         <input

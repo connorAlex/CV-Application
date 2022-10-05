@@ -19,13 +19,15 @@ class CV extends Component  {
             
             <div className='cv'>
                 <GenCV general={general}/>
-                <div>
-                    <div className="edTitle">Education</div>
-                    <div className ="edGroup">{schools.map((item) => <EdCV school={item} key={item.key} />)}</div>
-                </div>
-                <div>
-                    <div className="workTitle">Work Experience</div>
-                    <div className ="workGroup">{jobs.map((item) => <WorkCV job={item} key={item.key} />)}</div>
+                <div className="subject">
+                    <div>
+                        <div className="edTitle">Education</div>
+                        <div className ="edGroup">{schools.map((item) => <EdCV school={item} key={item.key} />)}</div>
+                    </div>
+                    <div>
+                        <div className="workTitle">Work Experience</div>
+                        <div className ="workGroup">{jobs.map((item) => <WorkCV job={item} key={item.key} />)}</div>
+                    </div>
                 </div>
             </div>
         )          
