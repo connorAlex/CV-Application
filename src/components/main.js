@@ -33,8 +33,8 @@ class Main extends Component {
                 },
             ],
             generalExp: {
-                name: 'Connor Cochrane',
-                email: 'connor.alex.cochrane@gmail.com',
+                name: 'John Doe',
+                email: 'john.doe@gmail.com',
                 phone: '555-555-5555',
                 location: 'Chicago, IL 60640'
             },
@@ -65,6 +65,14 @@ class Main extends Component {
         
         category[key] = value;
         this.setState({ [e.target.parentNode.parentNode.getAttribute('id')]: category})
+    }
+
+    submitReset = (e) => {
+        e.preventDefault();
+        this.setState({
+            jobs: [],
+            schools: [],
+        });
     }
 
     submitJob = (e) => {
@@ -109,6 +117,7 @@ class Main extends Component {
                     <General info={generalExp} onChange={this.handleChange}/>
                     <Experience info={workExp} onChange={this.handleChange} onSubmit={this.submitJob}/>
                     <Education info={educationExp} onChange={this.handleChange} onSubmit={this.submitEducation}/>
+                    <button onClick={this.submitReset}>Reset</button>
                 </div>
                 <CV jobs={jobs} schools={schools} general={generalExp}/>
             </div>

@@ -43,7 +43,7 @@ class General extends Component {
                         />
                     </div>
                 </form>
-
+            
             </div>
         );
     };
