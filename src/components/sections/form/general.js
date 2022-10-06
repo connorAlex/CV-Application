@@ -33,11 +33,11 @@ class General extends Component {
                         />
                     </div>
                     <div>
-                        <label htmlFor="phoneNum">Phone Number</label>
+                        <label htmlFor="phone">Phone Number</label>
                         <input
                             type="tel"
-                            id="phoneNum"
-                            name="phoneNum"
+                            id="phone"
+                            name="phone"
                             pattern='[0-9]{3}-[0-9]{2}-[0-9]{3}'
                             onChange={onChange}
                         />

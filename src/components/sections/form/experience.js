@@ -6,6 +6,16 @@ class Experience extends Component {
         super(props);
     }
 
+    // write a function to parse \n within the textarea
+    // create a new string for each line
+    // create a new div?
+
+    parseTextArea = (value) => {
+        
+
+    };
+
+
     render() {
         const { info, onChange, onSubmit} = this.props;
 

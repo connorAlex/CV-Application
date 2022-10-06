@@ -63,7 +63,6 @@ class Main extends Component {
         const key = e.target.getAttribute('name');
         const value = e.target.value;
         
-
         category[key] = value;
         this.setState({ [e.target.parentNode.parentNode.getAttribute('id')]: category})
     }
@@ -106,6 +105,7 @@ class Main extends Component {
             
             <div className='content'>
                 <div className = "main">
+                    {/* need to put in an id for each experience and education div to be able to later edit */}
                     <General info={generalExp} onChange={this.handleChange}/>
                     <Experience info={workExp} onChange={this.handleChange} onSubmit={this.submitJob}/>
                     <Education info={educationExp} onChange={this.handleChange} onSubmit={this.submitEducation}/>
