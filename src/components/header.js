@@ -9,7 +9,7 @@ class Header extends Component {
     render() {
         return (
             <div className='header'>
-                <div>CV Application</div>
+                <div>CV Composer</div>
             </div>
         );
     };

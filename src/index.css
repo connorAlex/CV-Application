@@ -61,7 +61,7 @@ code {
   flex-direction: column;
   align-self: center;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
   height: 100%;
 }
 
@@ -176,7 +176,7 @@ textarea {
 .workGroup, .edGroup {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 15px;
 }
 .edCV,.workCV {
   padding-top: 5px;

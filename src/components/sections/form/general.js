@@ -33,6 +33,15 @@ class General extends Component {
                         />
                     </div>
                     <div>
+                        <label htmlFor="location">Location</label>
+                        <input
+                            type="location"
+                            id="location"
+                            name="location"
+                            onChange={onChange}
+                        />
+                    </div>
+                    <div>
                         <label htmlFor="phone">Phone Number</label>
                         <input
                             type="tel"
