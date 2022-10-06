@@ -11,7 +11,7 @@ class Experience extends Component {
     // create a new div?
 
     parseTextArea = (value) => {
-        
+
 
     };
 
@@ -21,7 +21,7 @@ class Experience extends Component {
 
         return (
             <div className = "experience" onSubmit={onSubmit}>
-                <form id="workExp">
+                <form id="workExp" autoComplete='off'>
                     <div>Work</div>
                     <div>
                         <label htmlFor='companyName'>Company Name</label>

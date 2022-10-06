@@ -12,7 +12,7 @@ class General extends Component {
 
         return (
             <div className = "general">
-                <form id="generalExp">
+                <form id="generalExp" autoComplete='off'>
                     <div>Personal</div>
                     <div>
                         <label htmlFor="name">Name</label>

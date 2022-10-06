@@ -12,7 +12,7 @@ class Education extends Component {
         return (
             
             <div className = "education">
-                <form id="educationExp" onSubmit={onSubmit}>
+                <form id="educationExp" onSubmit={onSubmit} autoComplete='off'>
                     <div>Education</div>
                     <div>
                         <label htmlFor='school'>School</label>
