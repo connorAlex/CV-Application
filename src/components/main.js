@@ -117,7 +117,7 @@ class Main extends Component {
                     <General info={generalExp} onChange={this.handleChange}/>
                     <Experience info={workExp} onChange={this.handleChange} onSubmit={this.submitJob}/>
                     <Education info={educationExp} onChange={this.handleChange} onSubmit={this.submitEducation}/>
-                    <button onClick={this.submitReset}>Reset</button>
+                    <button className="resetBtn" onClick={this.submitReset}>Reset</button>
                 </div>
                 <CV jobs={jobs} schools={schools} general={generalExp}/>
             </div>
