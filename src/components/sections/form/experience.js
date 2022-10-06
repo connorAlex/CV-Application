@@ -47,7 +47,7 @@ class Experience extends Component {
                     <div>
                         <label htmlFor='jobStart'>Start Date</label>
                         <input
-                            type="date"
+                            type="text"
                             id="dateBegin"
                             name='dateBegin'
                             value={info.dateBegin}
@@ -57,7 +57,7 @@ class Experience extends Component {
                     <div>
                         <label htmlFor='jobEnd'>End Date</label>
                         <input
-                            type="date"
+                            type="text"
                             id="dateEnd"
                             name='dateEnd'
                             value={info.dateEnd}

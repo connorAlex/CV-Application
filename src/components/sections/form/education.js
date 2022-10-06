@@ -57,7 +57,7 @@ class Education extends Component {
                     <div>
                         <label htmlFor='startDate'>Start Date</label>
                         <input
-                            type="date"
+                            type="text"
                             name='startDate'
                             id="startDate"
                             value={info.startDate}
@@ -67,7 +67,7 @@ class Education extends Component {
                     <div>
                         <label htmlFor='gradDate'>Graduation Date</label>
                         <input
-                            type="date"
+                            type="text"
                             id="gradDate"
                             name='gradDate'
                             value={info.gradDate}
