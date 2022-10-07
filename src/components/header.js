@@ -1,18 +1,13 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class Header extends Component {
+const Header = () => {
     
-    constructor(props) {
-        super(props);
-    }
-
-    render() {
-        return (
-            <div className='header'>
-                <div>CV Composer</div>
-            </div>
-        );
-    };
+    return (
+        <div className='header'>
+            <div>CV Composer</div>
+        </div>
+    );
 }
+
 
 export default Header;
