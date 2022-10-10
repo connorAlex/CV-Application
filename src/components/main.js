@@ -86,7 +86,7 @@ const Main = () => {
     }
     const submitJob = (e) => {
         e.preventDefault();
-        setJobs(jobs.concat(workExp));
+        setJobs(jobs.concat(work));
         setWork({
             companyName: '',
             jobTitle: '',
@@ -99,7 +99,7 @@ const Main = () => {
 
     const submitEducation = (e) => {
         e.preventDefault();
-        setSchools(schools.concat(educationExp));
+        setSchools(schools.concat(education));
         setEducation({
             school: '',
             degree: '',
