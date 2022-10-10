@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import EdCV from './edCV.js';
 import GenCV from './genCV.js';
 import WorkCV from './workCV.js';
-import uniqid from "uniqid";
 
 const CV = ({schools, general, jobs}) => {
 

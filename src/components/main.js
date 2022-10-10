@@ -66,24 +66,10 @@ const Main = () => {
 
     const submitReset = (e) => {
         e.preventDefault();
-        setEducation({
-            school: '',
-            degree: '',
-            degreeType: '',
-            major: '',
-            startDate: '',
-            gradDate: '',
-            key: uniqid()
-        });
-        setWork({
-            companyName: '',
-            jobTitle: '',
-            tasks: '',
-            dateBegin: '',
-            dateEnd: '',
-            key: uniqid(),
-        });
+        setJobs([]);
+        setSchools([]);
     }
+    
     const submitJob = (e) => {
         e.preventDefault();
         setJobs(jobs.concat(work));
