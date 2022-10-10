@@ -1,7 +1,6 @@
 import React from 'react';
 
 const GenCV = ({general}) => {
-  
       return (
           <div className='genCV'>
             <div>{general.name}</div>

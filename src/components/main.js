@@ -40,16 +40,28 @@ const Main = () => {
     const [work, setWork] = useState(workExp);
 
     const handleChangeEd = (e) => {
-        const {value} = e.target;
-        setEducation({ [e.target.parentNode.parentNode.getAttribute('id')]: value})
+        const { name, value} = e.target;
+        setEducation((prevState) => ({
+            ...prevState,
+            [name]: value
+        }));
     }
+
     const handleChangeGen = (e) => {
-        const {value} = e.target;
-        setGen({ [e.target.parentNode.parentNode.getAttribute('id')]: value})
+        const { name, value} = e.target;
+        setGen((prevState) => ({
+            ...prevState,
+            [name]: value
+        }));
+        console.log(gen);
     }
+
     const handleChangeWork = (e) => {
-        const {value} = e.target;
-        setWork({ [e.target.parentNode.parentNode.getAttribute('id')]: value})
+        const { name, value} = e.target;
+        setWork((prevState) => ({
+            ...prevState,
+            [name]: value
+        }));
     }
 
     const submitReset = (e) => {
@@ -102,12 +114,12 @@ const Main = () => {
     return (
         <div className='content'>
             <div className='main'>
-                <General info={generalExp} onChange={handleChangeGen}/>
-                <Experience info={workExp} onChange={handleChangeWork} onSubmit={submitJob}/>
-                <Education info={educationExp} onChange={handleChangeEd} onSubmit={submitEducation}/>
+                <General info={gen} onChange={handleChangeGen}/>
+                <Experience info={work} onChange={handleChangeWork} onSubmit={submitJob}/>
+                <Education info={education} onChange={handleChangeEd} onSubmit={submitEducation}/>
                 <button className='resetBtn' onClick={submitReset}>Reset</button>
             </div>
-            <CV jobs={jobs} schools={schools} general={generalExp}/>
+            <CV jobs={jobs} schools={schools} general={gen}/>
         </div>
     )
 

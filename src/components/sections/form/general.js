@@ -1,6 +1,8 @@
 import React from 'react';
 
-const General = ({onChange}) => {
+function General({onChange}) {
+    
+    
     
     return (
         <div className = "general">
